@@ -1,0 +1,205 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 17px;
+  color: #575757;
+  font-family: "Open Sans", sans-serif;
+  float: left;
+  width: 100%;
+  line-height: 37px;
+}
+@media only screen and (max-width: 991.98px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+/* Container and layout */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 991.98px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+/* Section styles */
+.section {
+  padding: 6rem 0;
+}
+@media only screen and (max-width: 991.98px) {
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+.page-heading {
+  color: #BF1E23;
+  font-size: 27px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.56rem;
+}
+@media only screen and (max-width: 991.98px) {
+  .page-heading {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .page-heading {
+    font-size: 17px;
+  }
+}
+
+/* Button styles */
+.cgi-btn,
+.cgi-btn-reverse {
+  font-size: 15px;
+  padding: 3px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all ease-in-out 0.2s;
+  font-weight: 600;
+}
+.cgi-btn {
+  color: #fff;
+  background: #BF1E23;
+  border: solid 1px #BF1E23;
+}
+.cgi-btn-reverse {
+  color: #BF1E23;
+  background: #fff;
+  border: solid 1px #fff;
+}
+@media only screen and (max-width: 767.98px) {
+  .cgi-btn,
+  .cgi-btn-reverse {
+    padding: 5px 25px;
+  }
+}
+
+/* Navigation styles */
+header {
+  padding: 20px 0;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+header.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 16;
+  padding: 0.6rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+header .navbar-toggler {
+  background: #2b3f68;
+  padding: 0.45rem 0.75rem;
+  margin-top: 0;
+}
+header nav.navbar ul.navbar-nav li {
+  padding: 9px 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+header nav.navbar ul.navbar-nav li:after {
+  content: "|";
+  float: right;
+}
+header nav.navbar ul.navbar-nav li:last-child::after {
+  content: "";
+}
+header nav.navbar ul.navbar-nav li:last-child a {
+  padding-right: 0;
+}
+header nav.navbar ul.navbar-nav li a {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  color: #363636;
+  font-weight: 600;
+  padding: 0 10px;
+  text-decoration: none;
+}
+header nav.navbar ul.navbar-nav li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 7px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  list-style: none;
+  z-index: 2;
+  background: #fff;
+  width: 250px;
+}
+@media only screen and (max-width: 991.98px) {
+  header nav.navbar ul.navbar-nav li .sub-menu {
+    position: static;
+    float: left;
+    width: 100%;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+}
+header nav.navbar ul.navbar-nav li .sub-menu li {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+header nav.navbar ul.navbar-nav li .sub-menu li a {
+  float: left;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+header nav.navbar ul.navbar-nav li .sub-menu li:hover a,
+header nav.navbar ul.navbar-nav li .sub-menu li.active a {
+  background: #BF1E23;
+  color: #fff;
+}
+header nav.navbar ul.navbar-nav li:hover a {
+  color: #BF1E23;
+}
+header nav.navbar ul.navbar-nav li:hover .sub-menu {
+  display: block;
+}
+header nav.navbar ul.navbar-nav li.active a {
+  color: #BF1E23;
+}
+header {
+    display: grid;
+    
+}
